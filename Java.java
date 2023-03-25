@@ -7,6 +7,7 @@ public class Java {
         System.out.print("Number: ");
         long n = input.nextLong();
 
+        // close the scanner
         input.close();
 
         String type = getType(n);
