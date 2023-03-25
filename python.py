@@ -1,5 +1,7 @@
+# Python source code
+
 def main():
-    # ask for the number
+    """Ask for the number."""
     n = int(input("Number: "))
 
     type = getType(n)
@@ -11,8 +13,9 @@ def main():
         else:
             print("INVALID")
 
-# check the validity
+
 def isValid(n, type):
+    """Check the validity"""
     if (type == "VISA" and (len(str(n)) == 13 or len(str(n)) == 16)):
         return True
     elif (type == "AMEX" and len(str(n)) == 15):
@@ -22,8 +25,9 @@ def isValid(n, type):
     else:
         return False
 
-# get what type of card
+
 def getType(n):
+    """Get what type of card"""
     # visa
     if (int(str(n)[0]) == 4 and checksum(n)):
         return "VISA"
@@ -36,8 +40,9 @@ def getType(n):
     else:
         return "INVALID"
 
-# luhn's algorithm
+
 def checksum(n):
+    """Luhn's algorithm"""
     # multiply every other digit by 2, starting with the number’s second-to-last digit,
     # and then add those products’ digits together.
     sum = 0
@@ -54,5 +59,7 @@ def checksum(n):
         return True
     else:
         return False
-
-main()
+    
+    
+if __name__ == "__main__":
+    main()
