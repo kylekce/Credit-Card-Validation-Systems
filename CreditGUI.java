@@ -1,3 +1,5 @@
+// Credit Card Validator GUI
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
