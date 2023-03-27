@@ -1,7 +1,7 @@
 # Credit Card Validator GUI
 
 # tkinter is a Python library for creating GUIs
-# ToolKit Interface
+# Toolkit Interface
 import tkinter as tk
 import re
 
