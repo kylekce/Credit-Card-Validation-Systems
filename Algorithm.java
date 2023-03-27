@@ -1,3 +1,5 @@
+// Algorithm for Credit Card Validator 
+
 import java.util.Scanner;
 
 public class Algorithm {
