@@ -1,3 +1,8 @@
+/*
+To run this test, IntelliJ IDEA is recommended to use.
+*/
+
+
 import org.junit.Test;
 import static org.junit.Assert.*;
 
